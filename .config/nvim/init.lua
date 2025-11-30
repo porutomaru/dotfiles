@@ -46,6 +46,13 @@ require("lazy").setup({
   "NMAC427/guess-indent.nvim",
 
   {
+    "folke/todo-comments.nvim",
+    event = "VimEnter",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = { signs = false },
+  },
+
+  {
     "jpalardy/vim-slime",
     init = function()
       vim.g.slime_bracketed_paste = 1
